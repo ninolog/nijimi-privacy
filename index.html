@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nijimi プライバシーポリシー / Privacy Policy</title>
+<meta name="description" content="Chrome 拡張機能 Nijimi のプライバシーポリシー。個人情報の収集や外部への送信はしません。">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap">
+<style>
+:root { --ground: #F8F3EC; --card: #FFFFFF; --ink: #2E2A3D; --sub: #5B5570; --line: rgba(46, 42, 61, 0.12); --accent: #6D4FD8; --mark: #EE9A6A; }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #17151E; --card: #211E2B; --ink: #EDEAF5; --sub: #B3AEC6; --line: rgba(237, 234, 245, 0.14); --accent: #B9A9EC; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: 'Noto Sans JP', sans-serif; line-height: 1.85; -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: 'Zen Maru Gothic', sans-serif; font-size: 24px; font-weight: 700; }
+.brand img { width: 44px; height: 44px; }
+nav { display: flex; gap: 8px; }
+nav a { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); text-decoration: none; font-size: 14px; background: var(--card); }
+nav a:hover { border-color: var(--accent); color: var(--accent); }
+article { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 36px 32px; margin-bottom: 28px; }
+h1 { font-family: 'Zen Maru Gothic', sans-serif; font-size: 28px; line-height: 1.4; margin: 0 0 4px; }
+h2 { font-family: 'Zen Maru Gothic', sans-serif; font-size: 19px; margin: 32px 0 6px; padding-bottom: 4px; border-bottom: 2px solid var(--mark); display: inline-block; }
+p, ul { margin: 8px 0; }
+ul { padding-left: 1.3em; }
+.date { color: var(--sub); font-size: 14px; margin-bottom: 20px; }
+code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.92em; background: var(--ground); padding: 1px 6px; border-radius: 6px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+footer { color: var(--sub); font-size: 13px; text-align: center; }
+@media (max-width: 520px) { article { padding: 26px 18px; } h1 { font-size: 23px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand"><img src="icon.png" alt="">Nijimi</div>
+<nav aria-label="言語 / Language"><a href="#ja" lang="ja">日本語</a><a href="#en" lang="en">English</a></nav>
+</header>
+<article lang="ja">
+<h1 id="ja">Nijimi プライバシーポリシー</h1>
+<p class="date">最終更新日：2026年10月1日</p>
+<p>Nijimi（以下「本拡張機能」）は、YouTube・Twitch・X で表示している動画や画像の色を、ページの周りに光として映す Chrome 拡張機能です。本拡張機能は、利用者の個人情報を収集・送信・販売しません。</p>
+<h2>収集する情報</h2>
+<p>本拡張機能は、利用者に関する情報を一切収集しません。アクセス解析、広告、外部サービスへのデータ送信も行いません。</p>
+<h2>ページの内容の扱い</h2>
+<p>本拡張機能は、次のサイトでのみ動作します。</p>
+<ul><li><a href="https://www.youtube.com/">https://www.youtube.com/</a></li><li><a href="https://www.twitch.tv/">https://www.twitch.tv/</a></li><li><a href="https://x.com/">https://x.com/</a> ・ <a href="https://twitter.com/">https://twitter.com/</a></li></ul>
+<p>これらのページで表示されている動画や画像を、光を描くためにブラウザの中で読み取ります。読み取った映像は光の表示にだけ使い、保存したり、外部に送信したりすることはありません。</p>
+<p>動画がまだ読み込まれていないときは、光の色の元として、その動画のサムネイル画像を各サービスの画像サーバー（YouTube の i.ytimg.com、Twitch の static-cdn.jtvnw.net）から読み込むことがあります。これはページ自体が画像を表示するときと同じ通常の読み込みで、本拡張機能から何らかの情報を送るものではありません。</p>
+<h2>端末に保存する情報</h2>
+<p>本拡張機能は、Chrome の拡張機能用ストレージ（chrome.storage.local）に次の情報を保存します。保存先は利用者の端末の中だけで、外部には送信されません。</p>
+<ul><li>設定値（オン・オフ、ぼかし、広がり、明るさなど）</li><li>YouTube ショートの表示を整えるための、ページ部品の目印（要素の名前やクラス名）</li></ul>
+<p>これらの情報は、本拡張機能をアンインストールすると削除されます。</p>
+<h2>権限について</h2>
+<ul><li><code>storage</code>：上記の設定値と目印を保存するために使います。</li><li>対象サイトへのアクセス（上記4つのアドレス）：そのページの動画や画像に光を付けるために使います。これ以外のサイトにはアクセスしません。</li></ul>
+<h2>本ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、このページで更新内容と最終更新日をお知らせします。</p>
+<h2>お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、このリポジトリの Issues（<a href="https://github.com/ninolog/nijimi-privacy/issues">https://github.com/ninolog/nijimi-privacy/issues</a>）からお願いします。</p>
+</article>
+<article lang="en">
+<h1 id="en">Nijimi Privacy Policy</h1>
+<p class="date">Last updated: October 1, 2026</p>
+<p>Nijimi (&quot;the extension&quot;) is a Chrome extension that casts the colors of the video or image you are watching on YouTube, Twitch and X around the page as light. The extension does not collect, transmit or sell any personal information.</p>
+<h2>Information we collect</h2>
+<p>None. The extension collects no information about you. It has no analytics, no ads, and sends no data to any outside service.</p>
+<h2>How page content is used</h2>
+<p>The extension runs only on these sites:</p>
+<ul><li><a href="https://www.youtube.com/">https://www.youtube.com/</a></li><li><a href="https://www.twitch.tv/">https://www.twitch.tv/</a></li><li><a href="https://x.com/">https://x.com/</a> and <a href="https://twitter.com/">https://twitter.com/</a></li></ul>
+<p>On those pages it reads the video or image being shown, inside your browser, to draw the light. What it reads is used only for that display; it is never stored or sent anywhere.</p>
+<p>While a video has not loaded yet, the extension may load that video&#x27;s thumbnail from the service&#x27;s own image server (YouTube&#x27;s i.ytimg.com, Twitch&#x27;s static-cdn.jtvnw.net) to take the light&#x27;s colors from. This is an ordinary image load, the same as the page&#x27;s own; the extension sends no information with it.</p>
+<h2>Information stored on your device</h2>
+<p>The extension keeps the following in Chrome&#x27;s extension storage (chrome.storage.local), on your device only, never sent anywhere:</p>
+<ul><li>Your settings (on/off, blur, spread, brightness and so on)</li><li>Hints for laying out YouTube Shorts (names and class names of page elements)</li></ul>
+<p>They are removed when you uninstall the extension.</p>
+<h2>Permissions</h2>
+<ul><li><code>storage</code>: to keep the settings and hints above.</li><li>Access to the sites listed above: to add the light to the video or image on those pages. The extension does not access any other site.</li></ul>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the update and its date will be posted on this page.</p>
+<h2>Contact</h2>
+<p>For questions about this policy, please open an issue on this repository: <a href="https://github.com/ninolog/nijimi-privacy/issues">https://github.com/ninolog/nijimi-privacy/issues</a></p>
+</article>
+<footer>Nijimi — Chrome 拡張機能 / Chrome extension</footer>
+</div>
+</body>
+</html>
